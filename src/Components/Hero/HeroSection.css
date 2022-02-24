@@ -1,0 +1,9 @@
+.will-change {
+    will-change: transform;
+}
+
+@media (max-width: 768px) {
+    .social-icon-desktop{
+        display: none;
+    }
+}
