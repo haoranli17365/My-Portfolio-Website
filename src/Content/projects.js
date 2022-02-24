@@ -14,7 +14,7 @@ export const projects = [
     {
         name: "Image Segmenation - UNet",
         description_1: 'Image Segmentation with UNet architecture for cell images using PyTorch.',
-        description_2: 'Implemented and trained the UNet network. Manipulate the input data and label with augmentaion techniques including flips, rotations and scaling to increase training quality.',
+        description_2: 'Implemented and trained the UNet network. Manipulate the input pairs with augmentaion techniques including flips, rotations and scaling to increase training quality.',
         url: 'https://github.com/haoranli17365/UNet_Image_Segmentation'
     }
 ]

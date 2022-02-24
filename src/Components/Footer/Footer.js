@@ -9,16 +9,16 @@ const Footer = () => {
       <div class="p-4 flex flex-col text-center items-center gap-8 md:gap-0 md:items-start md:text-left md:flex-row md:justify-around">
         {/* page redirect links */}
         <div class="flex flex-col justify-items-center text-yellow-400 font-light gap-2 ">
-          <h1 class="font-semibold">Links</h1>
-          <a href="#" class="hover:text-yellow-300  text-sm">Home</a>
-          <a href="#About" class="hover:text-yellow-300 text-sm">About Me</a>
-          <a href="#Skills" class="hover:text-yellow-300 text-sm">Skills & Projects</a>
-          <a href="#Contact" class="hover:text-yellow-300 text-sm">Contact Me</a>
+          <h1 class="font-semibold text-lg">Links</h1>
+          <a href="#" class="hover:text-yellow-300  text-base">Home</a>
+          <a href="#About" class="hover:text-yellow-300 text-base">About Me</a>
+          <a href="#Skills" class="hover:text-yellow-300 text-base">Skills & Projects</a>
+          <a href="#Contact" class="hover:text-yellow-300 text-base">Contact Me</a>
         </div>
-        <div class="md:hidden h-px w-3/6 bg-yellow-400 rounded"></div>
+        <div class="md:hidden h-px w-4/5 bg-yellow-400 rounded"></div>
         {/* social media links  */}
         <div class="flex flex-col text-left gap-4 font-semibold text-yellow-400">
-          <h1>Social Media</h1>
+          <h1 class="text-lg">Social Media</h1>
           <div class="flex flex-row gap-2">
             <a href="https://github.com/haoranli17365"><img src="github.png" class="h-6 w-6 hover:scale-105" /></a>
             <a href="https://www.linkedin.com/in/haoran-li-01ab8a174/"><img src="linkedin-icon.svg" class="h-6 w-6 hover:scale-105"/></a>
@@ -26,33 +26,33 @@ const Footer = () => {
         </div>
         <div class="div-line w-px h-40 bg-yellow-400 rounded"></div>
 
-        <div class=" md:hidden h-px w-3/6 bg-yellow-400 rounded"></div>
+        <div class=" md:hidden h-px w-4/5 bg-yellow-400 rounded"></div>
         {/* Contact info */}
         <div class="flex flex-col text-yellow-400 font-semibold gap-4">
-         <h1>My Contact Information</h1>
-         <div class="flex flex-row text-xs md:text-sm font-light md:justify-start justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className=" md:h-5 md:w-5 h-4 w-4 mt-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+         <h1 class="md:text-lg">My Contact Information</h1>
+         <div class="flex flex-row text-xs md:text-lg font-light md:justify-start justify-center select-none">
+            <svg xmlns="http://www.w3.org/2000/svg" className=" md:h-7 md:w-7 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <p class="select-none">Email: {info['email']}</p> 
-            <svg xmlns="http://www.w3.org/2000/svg" className="mt-1 h-3 w-3 md:mt-0  md:h-5 md:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <p>Email: {info['email']}</p> 
+            <svg xmlns="http://www.w3.org/2000/svg" className="mt-1 h-3 w-3 md:h-5 md:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
             </svg>
-            <p class="select-none">{info['domain']}</p>
+            <p>{info['domain']}</p>
          </div>
-         <div class="flex flex-row text-xs md:text-sm font-light md:justify-start justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-5 md:w-5 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+         <div class="flex flex-row text-xs md:text-lg font-light md:justify-start justify-center select-none">
+          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-7 md:w-7 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
           </svg>
-          <p class="select-none">Phone: +1 {info['mobile_three']}</p>
-          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-6 md:w-2 h-4 w-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <p>Phone: +1 {info['mobile_three']}</p>
+          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-8 md:w-3 h-4 w-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M18 12H6" />
           </svg>
-          <p class="select-none">{info['mobile_mid_three']}</p>
-          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-6 md:w-2 h-4 w-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <p>{info['mobile_mid_three']}</p>
+          <svg xmlns="http://www.w3.org/2000/svg" className="md:h-8 md:w-3 h-4 w-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M18 12H6" />
           </svg>
-          <p class="select-none">
+          <p>
             {info['mobile_last_four']}
           </p>
          </div>

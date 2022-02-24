@@ -1,7 +1,7 @@
 # My Portfolio Website
 
 ## The Website is Now **Live** on Netlify:
-
+[Click Here to View](https://haoran-li.netlify.app/)
 
 ## Tools Used for the Project:
 1. React.js
